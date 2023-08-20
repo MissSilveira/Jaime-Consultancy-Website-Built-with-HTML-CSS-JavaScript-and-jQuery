@@ -76,7 +76,7 @@ header nav ul li a:hover{
 }
 
 .agende-box1{
-    background-image: url(/img/pexels-francesco-ungaro-3031849.jpg);
+    background-image: url(../img/pexels-francesco-ungaro-3031849.jpg);
     height: 90vh;
     background-size: cover;
     display: flex;
@@ -155,7 +155,7 @@ header nav ul li a:hover{
 }
 
 .sobre-box{
-    background-image: url(/img/pexels-peter-de-vink-16353409.jpg);
+    background-image: url(../img/pexels-peter-de-vink-16353409.jpg);
     background-size: cover;
     padding: 5% 25%;
     display: flex;
