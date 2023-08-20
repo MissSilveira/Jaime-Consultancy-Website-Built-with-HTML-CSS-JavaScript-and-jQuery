@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+::selection{
+    color: var(--botticelii);
+    background-color: var(--stratos);
+}
+
+:root{
+    --stratos: #001b48;
+    --regal-blue: #02457a;
+    --bondi-blue: #018abe;
+    --morning-blue: #97cadb;
+    --botticelii: #d6e8ee;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    background-color: rgb(10, 45, 73);
+    padding: 1.5% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-width: 100%;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+#menu-icon{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 1.4em;
+    transition: .5s;
+}
+
+header nav ul li a:hover{
+    color: rgb(37, 92, 136);
+}
+
+.agende-box1{
+    background-image: url(/img/pexels-francesco-ungaro-3031849.jpg);
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.agende-box1 article{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 2%;
+}
+
+.agende-box1 article h3{
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.agende-box1 article h2{
+    font-size: 6em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--stratos);
+}
+
+.agende-box1 article button{
+    font-size: 1.7em;
+    font-weight: 500;
+    padding: 2% 3%;
+    color: var(--regal-blue);
+}
+
+.cards-container{
+    padding: 5%;
+    display: flex;
+}
+
+.cards-container div{
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border: 1px solid rgb(121, 120, 120);
+}
+
+.cards-container div h3{
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--stratos);
+}
+
+.cards-container div p{
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.cards-container div button{
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    background-color: rgb(10, 45, 73);
+    padding: 5% 9%;
+    border: none;
+}
+
+.sobre-box{
+    background-image: url(/img/pexels-peter-de-vink-16353409.jpg);
+    background-size: cover;
+    padding: 5% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+.sobre-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d4e9f1d8;
+}
+
+.sobre-box h3, .sobre-box p, .sobre-box a{
+    z-index: 90;
+}
+
+.sobre-box h3{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--stratos);
+}
+
+.sobre-box p{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.sobre-box a{
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    border: 1px solid rgb(80, 79, 79);
+    padding: 2% 5%;
+    color: var(--stratos);
+}
+
+.clientes-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 2%;
+    gap: 75px;
+}
+
+.clientes-box h2{
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--stratos);
+}
+
+.img-clientes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-clientes img{
+    width: 20%;
+    height: 200px;
+    padding: 3%;
+    border: 1px solid rgb(141, 140, 140);
+}
+
+.depoimentos-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 15%;
+    gap: 25px;
+    background-color: #ebf0f1;
+}
+
+.depoimentos-box h2{
+    font-size: 3.75em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--stratos);
+    text-transform: uppercase;
+}
+
+.depor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+}
+
+.depor p{
+    font-size: 2em;
+    color: #001b48;
+    font-weight: 300;
+}
+
+.depor p span{
+    color: var(--regal-blue);
+    font-weight: 500;
+}
+
+.depoimentos-box button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.depor-text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10%;
+}
+
+.contato-box{
+    background-color: var(--regal-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 15%;
+    gap: 75px;
+}
+
+.contato-box h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.75em;
+    font-weight: 300;
+}
+
+.contato-box form{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.contato-box form label{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    font-size: 1.8em;
+    font-weight: 300;
+    width: 45%;
+}
+
+.contato-box form label input{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    height: 3em;
+    width: 100%;
+}
+
+.contato-box form #mensagem{
+    width: 70%;
+    height: 100px;
+}
+
+.contato-box form #mensagem input{
+    width: 100%;
+    height: 100%;
+}
+
+.contato-box form button{
+    display: flex;
+    padding: 2%;
+    width: 20%;
+    font-size: 1.8em;
+    justify-content: center;
+    color: var(--stratos);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contato-box iframe{
+    width: 100%;
+}
+
+footer{
+    background-color: var(--stratos);
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5%;
+    font-weight: 300;
+    font-size: 1.6em;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer div h3{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+footer div p{
+    line-height: 1.8em;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer div ul li a{
+    color: white;
+    transition: .5s;
+}
+
+
+footer div ul li a:hover{
+    color: var(--bondi-blue);
+}
+
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+    .animate {
+        opacity: 0;
+        transform: translateY(50%);
+        transition: opacity 1s ease, transform 1s ease;
+        position: relative;
+        right: 0;
+    }
+
+    .ativado {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+@media screen and (max-width:1300px) {
+    .agende-box1{
+        height: 70vh;
+    }
+
+    
+.agende-box1 article h3{
+    font-size: 2em;
+
+}
+
+.agende-box1 article h2{
+    font-size: 4em;
+}
+
+.agende-box1 article button{
+    font-size: 1.3em;
+    padding: 1%;
+}
+    
+    .agende-box1 article{
+        width: 80%;
+        padding: 3%;
+    }
+
+    .cards-container{
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cards-container div{
+        border: none;
+    }
+    
+    .cards-container div button{
+        padding: 3% 6%;
+        border: none;
+    }
+
+    .sobre-box{
+        padding: 5% 10%;
+    }
+}
+
+@media screen and (max-width:767px) {    
+    header{
+        position: relative;
+    }
+    
+    header nav {
+        display: none;
+    }
+    
+    .active header nav {
+        position: absolute;
+        top: 10vh;
+        width: 90%;
+        display: flex;
+        background-color: var(--botticelii);
+    }
+
+    .active header nav ul{
+        flex-direction: column;
+        padding: 5%;
+        width: 100%;
+    }
+
+    .active header nav ul li{
+        padding: 2%;
+    }
+
+    .active header nav ul li a{
+        color: var(--regal-blue);
+    }
+
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .agende-box1 article{
+        width: 90%;
+    }
+
+    .clientes-box{
+        padding: 10% 2%;
+    }
+       
+    .img-clientes{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .img-clientes img{
+        width: 40%;
+        height: 200px;
+        border: none;
+    }
+
+    .depoimentos-box{
+        padding: 10% 2%;
+    }
+
+    .depoimentos-box h2{
+        font-size: 3em;
+    }
+
+    .depor{
+        gap: 0px;
+    }
+
+    .depor p{
+        font-size: 1.6em;
+    }
+
+    .depor-text{
+        gap: 30px;
+        padding: 2%;
+    }
+
+    .contato-box{
+        padding: 5%;
+    }
+    
+    .contato-box form label{
+        width: 80%;
+    }
+        
+    .contato-box form #mensagem{
+        width: 80%;
+    }
+      
+    .contato-box form button{
+        width: 80%;
+    }
+
+    .contato-box iframe{
+        width: 80%;
+        
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {    
+    .agende-box1 article h3{
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    
+    .agende-box1 article h2{
+        font-size: 3em;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: var(--stratos);
+    }
+
+    .clientes-box{
+        padding: 10% 2%;
+    }
+       
+    .img-clientes{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .img-clientes img{
+        width: 40%;
+        height: 200px;
+        border: none;
+    }
+
+    .depoimentos-box{
+        padding: 10% 5%;
+    }
+    
+    .depor-text{
+        padding: 5%;
+    }
+
+    .contato-box{
+        padding: 5%;
+    }
+    
+    .contato-box form label{
+        width: 80%;
+    }
+        
+    .contato-box form #mensagem{
+        width: 80%;
+    }
+      
+    .contato-box form button{
+        width: 80%;
+    }
+    
+    footer{
+        flex-direction: column;
+    }
+}
